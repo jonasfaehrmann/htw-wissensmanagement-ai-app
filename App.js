@@ -12,7 +12,16 @@ export default class App extends Component {
   }
 
   componentDidMount () {
-    fetch('https://reactnative.dev/movies.json')
+    fetch('https://httpbin.org/post', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "image": 'base64'
+      })
+    })
       .then((response) => response.json())
       .then((json) => {
         this.setState({ data: json.movies })
