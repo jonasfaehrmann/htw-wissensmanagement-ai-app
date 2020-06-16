@@ -1,21 +1,43 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react'
+import { ActivityIndicator, FlatList, Text, View } from 'react-native'
 
-export default class App extends React.Component {
-  render() {
+export default class App extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      data: [],
+      isLoading: true
+    }
+  }
+
+  componentDidMount () {
+    fetch('https://reactnative.dev/movies.json')
+      .then((response) => response.json())
+      .then((json) => {
+        this.setState({ data: json.movies })
+      })
+      .catch((error) => console.error(error))
+      .finally(() => {
+        this.setState({ isLoading: false })
+      })
+  }
+
+  render () {
+    const { data, isLoading } = this.state
+
     return (
-      <View style={styles.container}>
-        <Text>Lorenz is a sexy mf</Text>
+      <View style={{ flex: 1, padding: 24 }}>
+        {isLoading ? <ActivityIndicator /> : (
+          <FlatList
+            data={data}
+            keyExtractor={({ id }, index) => id}
+            renderItem={({ item }) => (
+              <Text>{item.title}, {item.releaseYear}</Text>
+            )}
+          />
+        )}
       </View>
-    );
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
