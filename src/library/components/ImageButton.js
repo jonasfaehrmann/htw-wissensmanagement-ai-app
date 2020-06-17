@@ -1,6 +1,5 @@
 import React from 'react'
 import { TouchableOpacity, View, Image, Text, StyleSheet } from 'react-native'
-import images from 'res/images'
 import colors from 'res/colors'
 
 export default class ImageButton extends React.Component {
@@ -11,7 +10,7 @@ export default class ImageButton extends React.Component {
           <Text style={styles.text}>{this.props.title}</Text>
         </View>
         <Image
-          source={images.button}
+          source={this.props.image}
           style={styles.image}
         />
       </TouchableOpacity>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 import strings from 'res/strings'
+import images from 'res/images'
 import ImageButton from 'library/components/ImageButton'
 import moveToBottom from 'library/utils/moveToBottom'
 
@@ -10,11 +11,15 @@ function StartDiagnosis () {
       <Text>{strings.main.startdiagnosis.heading.toUpperCase()}</Text>
       {
         moveToBottom(
-          <ImageButton title={strings.main.startdiagnosis.button.toUpperCase()} />
+          <ImageButton image={images.startdiagnosis} onPress={onStartDiagnosisPress()} />
         )
       }
     </View>
   )
+}
+
+function onStartDiagnosisPress () {
+  navigation.push('Details')
 }
 
 const styles = StyleSheet.create({
