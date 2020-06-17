@@ -1,27 +1,28 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
-import strings from 'res/strings'
-import ImageButton from 'library/components/ImageButton'
-import moveToBottom from 'library/utils/moveToBottom'
+import { createStackNavigator } from '@react-navigation/stack'
+import Detail from 'library/components/Detail'
+import Feed from 'library/components/Feed'
 
-function PastDiagnosis () {
+const Stack = createStackNavigator()
+
+function FeedStack () {
   return (
-    <View style={styles.container}>
-      <Text>{strings.main.pastdiagnosis.heading.toUpperCase()}</Text>
-      {
-        moveToBottom(
-          <ImageButton title={strings.main.pastdiagnosis.heading.toUpperCase()} />
-        )
-      }
-    </View>
+    <Stack.Navigator
+      initialRouteName='FeedList'
+      headerMode='screen'
+    >
+      <Stack.Screen
+        name='Feed'
+        component={Feed}
+        options={{ headerTitle: 'Past Diagnosis' }}
+      />
+      <Stack.Screen
+        name='Detail'
+        component={Detail}
+        options={{ headerTitle: 'Detail' }}
+      />
+    </Stack.Navigator>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center'
-  }
-})
-
-export default PastDiagnosis
+export default FeedStack

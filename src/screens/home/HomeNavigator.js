@@ -1,29 +1,29 @@
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import PastDiagnosis from './pastdiagnosis/PastDiagnosisScreen'
-import StartDiagnosis from './startdiagnosis/StartDiagnosisScreen'
+import CameraScreen from './camera/CameraScreen'
 
 const Tab = createMaterialBottomTabNavigator()
 
 function HomeNavigator () {
   return (
     <Tab.Navigator
-      initialRouteName='home'
+      initialRouteName='Home'
       shifting
       sceneAnimationEnabled={false}
     >
       <Tab.Screen
-        name='StartDiagnosis'
-        component={StartDiagnosis}
+        name='CameraScreen'
+        component={CameraScreen}
         options={{
-          tabBarIcon: 'home-account'
+          tabBarIcon: 'camera'
         }}
       />
       <Tab.Screen
         name='PastDiagnosis'
         component={PastDiagnosis}
         options={{
-          tabBarIcon: 'bell-outline'
+          tabBarIcon: 'home-account'
         }}
       />
     </Tab.Navigator>
