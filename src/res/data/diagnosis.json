@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "🌈 Josh",
+    "handle": "@JoshWComeau",
+    "date": "10h",
+    "content":
+      "🔥 Automatically use 'smart' directional curly quotes with the `quotes` CSS property! Even handles nested quotes with the <q> tag :o",
+    "image": "https: //pbs.twimg.com/media/EOUrCOcWAAA71rA?format=png&name=small",
+    "avatar":
+      "https: //pbs.twimg.com/profile_images/461190672117035010/0kJ4pynr_400x400.jpeg",
+    "comments": 12,
+    "retweets": 36,
+    "hearts": 175
+  }
+]

@@ -1,28 +1,26 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import Detail from 'library/components/Detail'
-import Feed from 'library/components/Feed'
+import PastDiagnosisDetail from './PastDiagnosisDetail'
+import PastDiagnosisFeed from './PastDiagnosisFeed'
 
 const Stack = createStackNavigator()
 
-function FeedStack () {
+export default function PastDiagnosisNavigator () {
   return (
     <Stack.Navigator
-      initialRouteName='FeedList'
+      initialRouteName='PastDiagnosisNavigator'
       headerMode='screen'
     >
       <Stack.Screen
         name='Feed'
-        component={Feed}
+        component={PastDiagnosisFeed}
         options={{ headerTitle: 'Past Diagnosis' }}
       />
       <Stack.Screen
         name='Detail'
-        component={Detail}
+        component={PastDiagnosisDetail}
         options={{ headerTitle: 'Detail' }}
       />
     </Stack.Navigator>
   )
 }
-
-export default FeedStack

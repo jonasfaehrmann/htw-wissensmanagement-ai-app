@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Text, View, TouchableOpacity } from 'react-native'
 import { Camera } from 'expo-camera'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import * as ImagePicker from 'expo-image-picker'
+import { FontAwesome, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
 
-export default function CameraScreen () {
+export default function CameraScreen (props) {
   const [hasPermission, setHasPermission] = useState(null)
-  const [type, setType] = useState(Camera.Constants.Type.back)
+  let [camera] = useState(null)
 
   useEffect(() => {
     (async () => {
@@ -17,36 +19,88 @@ export default function CameraScreen () {
     return <View />
   }
   if (hasPermission === false) {
-    return <Text>No access to camera</Text>
+    return <Text style={{ fontSize: 100, textAlign: 'center' }}> No access to camera</Text>
   }
+
+  async function takePicture () {
+    if (camera) {
+      const result = await camera.takePictureAsync()
+      if (!result.cancelled) {
+        props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: { image: result.uri } })
+      }
+    }
+  }
+
+  async function pickImage () {
+    const result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images
+    })
+    if (!result.cancelled) {
+      props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: { image: result.uri } })
+    }
+  }
+
   return (
-    <View style={{ flex: 1 }}>
-      <Camera style={{ flex: 1 }} type={type}>
-        <View
-          style={{
-            flex: 1,
-            backgroundColor: 'transparent',
-            flexDirection: 'row'
-          }}
-        >
+    <View style={styles.container}>
+      <Camera
+        style={styles.camera}
+        ref={ref => {
+          camera = ref
+        }}
+        type={Camera.Constants.Type.back}
+        flashMode={Camera.Constants.FlashMode.off}
+        autoFocus={Camera.Constants.AutoFocus.on}
+        zoom={0}
+        whiteBalance={Camera.Constants.WhiteBalance.auto}
+        focusDepth={0}
+        ratio='16:9'
+      >
+        <View style={styles.controls}>
           <TouchableOpacity
             style={{
-              flex: 0.1,
               alignSelf: 'flex-end',
-              alignItems: 'center'
+              alignItems: 'center',
+              backgroundColor: 'transparent'
             }}
-            onPress={() => {
-              setType(
-                type === Camera.Constants.Type.back
-                  ? Camera.Constants.Type.front
-                  : Camera.Constants.Type.back
-              )
-            }}
+            onPress={pickImage}
           >
-            <Text style={{ fontSize: 18, marginBottom: 10, color: 'white' }}> Flip </Text>
+            <Ionicons
+              name='ios-photos'
+              style={{ color: '#fff', fontSize: 40 }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              alignSelf: 'flex-end',
+              alignItems: 'center',
+              backgroundColor: 'transparent'
+            }}
+            onPress={takePicture}
+          >
+            <FontAwesome
+              name='camera'
+              style={{ color: '#fff', fontSize: 40 }}
+            />
           </TouchableOpacity>
         </View>
       </Camera>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+
+  camera: {
+    flex: 1
+  },
+
+  controls: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 20
+  }
+})

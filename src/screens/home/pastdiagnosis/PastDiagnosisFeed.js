@@ -2,8 +2,8 @@ import React from 'react'
 import { FlatList, View, StyleSheet } from 'react-native'
 import { useTheme } from 'react-native-paper'
 
-import Diagnosis from './Diagnosis'
-import { diagnosis } from 'res/data/diagnosis'
+import Diagnosis from 'library/components/Diagnosis'
+import diagnosisData from 'res/data/diagnosis'
 
 function renderItem (item) {
   return <Diagnosis {...item} />
@@ -13,14 +13,14 @@ function keyExtractor (item) {
   return item.id.toString()
 }
 
-export default function Feed (props) {
+export default function PastDiagnosisFeed (props) {
   const theme = useTheme()
-  const data = diagnosis.map(twittProps => ({
-    ...twittProps,
+  const data = diagnosisData.map(diagnosisProps => ({
+    ...diagnosisProps,
     onPress: () =>
       props.navigation &&
       props.navigation.push('Detail', {
-        ...twittProps
+        ...diagnosisProps
       })
   }))
 

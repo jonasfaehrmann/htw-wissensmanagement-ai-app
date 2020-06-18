@@ -1,6 +1,6 @@
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
-import PastDiagnosis from './pastdiagnosis/PastDiagnosisScreen'
+import PastDiagnosisNavigator from './pastdiagnosis/PastDiagnosisNavigator'
 import CameraScreen from './camera/CameraScreen'
 
 const Tab = createMaterialBottomTabNavigator()
@@ -20,8 +20,8 @@ function HomeNavigator () {
         }}
       />
       <Tab.Screen
-        name='PastDiagnosis'
-        component={PastDiagnosis}
+        name='PastDiagnosisNavigator'
+        component={PastDiagnosisNavigator}
         options={{
           tabBarIcon: 'home-account'
         }}
