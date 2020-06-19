@@ -1,0 +1,15 @@
+#create new v.env.
+conda create -n "planty_ai" python=3.6.9
+
+#install dependencies
+pip install Pillow==5.3.0
+pip install image
+conda install pytorch torchvision cpuonly -c pytorch
+conda install flask
+conda install requests
+
+#set environmental path
+set FLASK_APP=app.py
+
+#cd into folder
+flask run
