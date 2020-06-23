@@ -119,16 +119,17 @@ def predict_img(image_path, model, topk=1):
     return top_probability, top_class
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
 #server endpoint
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
         file = request.files['file']
-        #pred_arr = predict_img(file, loaded_model)
-        #prediction = pred_arr[1][0]
-        prediction = predict_img(file, loaded_model)
+        pred_arr = predict_img(file, loaded_model)
+        prediction = pred_arr[1][0]
+        print(prediction)
+        # prediction = predict_img(file, loaded_model)
         return jsonify(prediction)
 '''
 pred_tupl = predict(os.path.join(__location__, 'test.JPG'), loaded_model)
