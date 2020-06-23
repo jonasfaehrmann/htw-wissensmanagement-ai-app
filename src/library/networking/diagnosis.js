@@ -1,20 +1,17 @@
 
-
-export default function predictLeafHealth (image) {
-  console.log(image)
-  fetch('http://192.168.2.121:5000/predict', {
+export default async function predictLeafHealth (image) {
+  const formData = new FormData()
+  formData.append('file', { uri: image, name: 'image.jpg', type: 'image/jpeg' })
+  const result = await fetch('http://192.168.2.121:5000/predict', {
     method: 'POST',
     headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
+      'content-type': 'multipart/form-data'
     },
-    body: JSON.stringify({
-      image: image
-    })
-  })
-    .then((response) => response.json())
-    .then((json) => {
-      console.log(json)
-    })
-    .catch((error) => console.error(error))
+    body: formData
+  }).then(response => response.json())
+    .then(json => {
+      return json
+    }).catch((error) => console.log(error))
+
+  return result
 }

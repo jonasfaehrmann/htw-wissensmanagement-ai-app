@@ -128,8 +128,6 @@ def predict():
         file = request.files['file']
         pred_arr = predict_img(file, loaded_model)
         prediction = pred_arr[1][0]
-        print(prediction)
-        # prediction = predict_img(file, loaded_model)
         return jsonify(prediction)
 '''
 pred_tupl = predict(os.path.join(__location__, 'test.JPG'), loaded_model)
