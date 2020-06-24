@@ -1,16 +1,20 @@
 [
   {
-    "id": 1,
-    "name": "🌈 Josh",
-    "handle": "@JoshWComeau",
-    "date": "10h",
+    "id": "Apple___Apple_scab",
+    "name": "Apple Scab",
     "content":
-      "🔥 Automatically use 'smart' directional curly quotes with the `quotes` CSS property! Even handles nested quotes with the <q> tag :o",
-    "image": "https: //pbs.twimg.com/media/EOUrCOcWAAA71rA?format=png&name=small",
+      "What is it?\n\nA serious disease of apples and ornamental crabapples, apple scab (Venturia inaequalis) attacks both leaves and fruit. The fungal disease forms pale yellow or olive-green spots on the upper surface of leaves. Dark, velvety spots may appear on the lower surface. Severely infected leaves become twisted and puckered and may drop early in the summer.\n\nHow can you fight it?\n\n1. Choose resistant varieties when possible.\n2. Rake under trees and destroy infected leaves to reduce the number of fungal spores available.\n3. Water in the evening or early morning hours.\n4. Spread a 3- to 6-inch layer of compost under trees, keeping it away from the trunk.\n5. For best control, spray liquid copper soap early, two weeks before symptoms normally appear.\n\nMore information: \nhttps://www.planetnatural.com/pest-problem-solver/plant-disease/apple-scab/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apple_fruits_scab.jpg/1024px-Apple_fruits_scab.jpg",
     "avatar":
-      "https: //pbs.twimg.com/profile_images/461190672117035010/0kJ4pynr_400x400.jpeg",
-    "comments": 12,
-    "retweets": 36,
-    "hearts": 175
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/1024px-Honeycrisp.jpg"
+  },
+  {
+    "id": "Apple___Black_rot",
+    "name": "Apple Black rot",
+    "content":
+      "Text",
+    "image": "Link to image (best wikipedia)",
+    "avatar":
+      "Link to image (best wikipedia)"
   }
 ]
