@@ -27,11 +27,38 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/1024px-Honeycrisp.jpg"
   },
   {
+    "id": "Apple___healthy",
+    "name": "Well done!",
+    "content":
+      "Your apple tree is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/1024px-Honeycrisp.jpg"
+  },
+  {
+    "id": "Blueberry___healthy",
+    "name": "Well done!",
+    "content":
+      "Your blueberry is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/PattsBlueberries.jpg/440px-PattsBlueberries.jpg"
+  },
+  {
     "id": "Cherry_(including_sour)___Powdery_mildew",
     "name": "Powdery mildew",
     "content":
       "What is it?\n\nCommon on many plants and easily recognized, powdery mildew is a fungal disease found throughout the United States. It is caused by a variety of closely related fungal species, each with a limited host range. (The fungi attacking your roses are unlikely to spread to your lilacs). Low soil moisture combined with high humidity levels at the plant surface favors this disease.\n\nHow can you fight it?\n\n1. Plant resistant cultivars in sunny locations whenever possible.\n2. Prune or stake plants to improve air circulation.\n3. Remove diseased foliage from the plant and clean up fallen debris on the ground.\n4. Use a thick layer of mulch or organic compost to cover the soil after you have raked and cleaned it well.\n5. Use milk sprays, made with 40% milk and 60% water.\n6. Wash foliage occasionally to disrupt the daily spore-releasing cycle.\n\nMore information:\nhttps://www.planetnatural.com/pest-problem-solver/plant-disease/powdery-mildew/",
     "image": "https://goodfruit.com/wp-content/uploads/cherryMildewWSU-1-620x406.jpg",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/440px-Cherry_Stella444.jpg"
+  },
+  {
+    "id": "Cherry_(including_sour)___healthy",
+    "name": "Well done!",
+    "content":
+      "Your cherry tree is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
     "avatar":
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/440px-Cherry_Stella444.jpg"
   },
@@ -63,6 +90,15 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Corncobs.jpg/440px-Corncobs.jpg"
   },
   {
+    "id": "Corn_(maize)___healthy",
+    "name": "Well done!",
+    "content":
+      "Your corn is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Corncobs.jpg/440px-Corncobs.jpg"
+  },
+  {
     "id": "Grape___Black_rot",
     "name": "Grape Black rot",
     "content":
@@ -90,6 +126,15 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Abhar-iran.JPG/340px-Abhar-iran.JPG"
   },
   {
+    "id": "Grape___healthy",
+   "name": "Well done!",
+    "content":
+      "Your grapevine is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Abhar-iran.JPG/340px-Abhar-iran.JPG"
+  },
+  {
     "id": "Orange___Haunglongbing_(Citrus_greening)",
     "name": "Haunglongbing (Citrus greening)",
     "content":
@@ -108,11 +153,29 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Autumn_Red_peaches.jpg/440px-Autumn_Red_peaches.jpg"
   },
   {
+    "id": "Peach___healthy",
+    "name": "Well done!",
+    "content":
+      "Your peach tree is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Autumn_Red_peaches.jpg/440px-Autumn_Red_peaches.jpg"
+  },
+  {
     "id": "Pepper,_bell___Bacterial_spot",
     "name": "Bacterial spot",
     "content":
       "What is it? \n\nExcept for virus diseases, bacterial spot is the most important disease affecting peppers in New York. A mild case of bacterial spot causes prominent necrotic spots on leaves; a severe case can cause premature leaf drop and spotting of stems and pods that results in unmarketable fruit. Like most bacterial diseases, bacterial spot is difficult to control when frequent rains and moist conditions prevail. \n\nHow can you fight it? \n\n1. Use disease-free seed that has been produced in western states or seed that has been hot water treated. One infested seed in 10,000 may easily result in 100% diseased plants in the field under proper conditions. \n2. Purchase only certified disease-free transplants. \n3. Practice crop rotation. Use at least 1-year rotation between tomato or pepper crops with nonhost crops. \n4. For plant beds and flats in the greenhouse, keep the house as dry as possible and avoid splashing water. \nMore information: \nhttp://vegetablemdonline.ppath.cornell.edu/factsheets/Pepper_BactSpot.htm#:~:text=Except%20for%20virus%20diseases%2C%20bacterial,that%20results%20in%20unmarketable%20fruit. ",
     "image": "https://seminisus.s3.amazonaws.com/app/uploads/2016/11/pepper-spot.jpg",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Green-Yellow-Red-Pepper-2009.jpg/440px-Green-Yellow-Red-Pepper-2009.jpg"
+  },
+  {
+    "id": "Pepper,_bell___healthy",
+    "name": "Well done!",
+    "content":
+      "Your bell pepper is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
     "avatar":
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Green-Yellow-Red-Pepper-2009.jpg/440px-Green-Yellow-Red-Pepper-2009.jpg"
   },
@@ -135,6 +198,33 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/440px-Patates.jpg"
   },
   {
+    "id": "Potato___healthy",
+    "name": "Well done!",
+    "content":
+      "Your potato is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/440px-Patates.jpg"
+  },
+  {
+    "id": "Raspberry___healthy",
+    "name": "Well done!",
+    "content":
+      "Your raspberry is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/440px-Raspberries05.jpg"
+  },
+  {
+    "id": "Soybean___healthy",
+    "name": "Well done!",
+    "content":
+      "Your soybean is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Soybeans.jpg/523px-Soybeans.jpg"
+  },
+  {
     "id": "Squash___Powdery_mildew",
     "name": "Powdery mildew",
     "content":
@@ -149,6 +239,15 @@
     "content":
       " What is it? \n\nLeaf scorch is caused by the fungus Diplocarpon earliana. Symptoms of leaf scorch consist of numerous small, irregular, purplish spots or “blotches” that develop on the upper surface of leaves. The centers of the blotches become brownish. \n\nHow can you fight it? \n\n1. Remove the older and infected leaves from runner plants before setting. \n2. Take care in spacing runner plants in matted-row culture. \n3. Plant in light, well-drained soil in a location exposed to all-day sun and good air circulation. \n4. Control weeds in the planting. Weeds reduce air circulation and increase drying time for leaves. (Leaves stay wet longer in weedy plantings.) \n5. Removing infected leaves after harvest (during renovation) is helpful in reducing inoculum and controlling all the leaf diseases. \n\nMore information: \nhttps://ohioline.osu.edu/factsheet/plpath-fru-35",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Rode-vlekkenziekte_%28Diplocarpon_earlianum%29.jpg/1200px-Rode-vlekkenziekte_%28Diplocarpon_earlianum%29.jpg",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Strawberry_gariguette_DSC03063.JPG/440px-Strawberry_gariguette_DSC03063.JPG"
+  },
+   {
+    "id": "Strawberry___healthy",
+    "name": "Well done!",
+    "content":
+      "Your strawberry is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
     "avatar":
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Strawberry_gariguette_DSC03063.JPG/440px-Strawberry_gariguette_DSC03063.JPG"
   },
@@ -230,6 +329,15 @@
     "content":
       "What is it? \n\nTomato mosaic virus (ToMV) and  Tobacco mosaic virus (TMV) are hard to distinguish. It can cause yellowing and stunting of tomato plants resulting in loss of stand and reduced yield. ToMV may cause uneven ripening of fruit, further reducing yield. It was once thought to be more common on tomato. \n\nHow can you fight it? \n\n1. Purchase transplants only from reputable sources. Ask about the sanitation procedures they use to prevent disease. \n2. Inspect transplants prior to purchase. Choose only transplants showing no clear symptoms. \n3. Avoid planting in fields where tomato root debris is present, as the virus can survive long-term in roots. \n4. Wash hands with soap and water before and during the handling of plants to reduce potential spread between plants. \n5. Plant resistant varieties. \n6. Chemical Control: Fungicides are available for management of Tomato mosaic virus. \n\nMore information: \nhttps://extension.umn.edu/diseases/tomato-mosaic-virus-and-tobacco-mosaic-virus",
     "image": "https://www.creative-diagnostics.com/blog/wp-content/uploads/2017/01/tobacco-mosaic-virus.jpg",
+    "avatar":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Grape_tomatoes_on_the_vine_at_Ljubljana_Central_Market.JPG/440px-Grape_tomatoes_on_the_vine_at_Ljubljana_Central_Market.JPG"
+  },
+  {
+    "id": "Tomato___healthy",
+    "name": "Well done!",
+    "content":
+      "Your strawberry is looking very healthy."
+    "image": "https://cdn.dribbble.com/users/184987/screenshots/3366061/happyplant.png",
     "avatar":
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Grape_tomatoes_on_the_vine_at_Ljubljana_Central_Market.JPG/440px-Grape_tomatoes_on_the_vine_at_Ljubljana_Central_Market.JPG"
   }
