@@ -9,6 +9,7 @@ import {
   useTheme
 } from 'react-native-paper'
 import color from 'color'
+import { ScrollView } from 'react-native-gesture-handler'
 
 export default function DetailDiagnosis (props) {
   const theme = useTheme()
@@ -24,7 +25,7 @@ export default function DetailDiagnosis (props) {
     .string()
 
   return (
-    <Surface style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.topRow}>
         <Avatar.Image
           style={styles.avatar}
@@ -48,7 +49,7 @@ export default function DetailDiagnosis (props) {
           }
         ]}
       />
-    </Surface>
+    </ScrollView>
   )
 }
 

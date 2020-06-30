@@ -23,7 +23,7 @@ function HomeNavigator () {
         name='PastDiagnosisNavigator'
         component={PastDiagnosisNavigator}
         options={{
-          tabBarIcon: 'home-account'
+          tabBarIcon: 'tree'
         }}
       />
     </Tab.Navigator>

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Camera } from 'expo-camera'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import * as ImagePicker from 'expo-image-picker'
-import { FontAwesome, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
+import { FontAwesome, Ionicons } from '@expo/vector-icons'
 import predictLeafHealth from 'library/networking/diagnosis'
+import diagnosisData from 'res/data/diagnosis'
 
 export default function CameraScreen (props) {
   const [hasPermission, setHasPermission] = useState(null)
@@ -27,10 +28,14 @@ export default function CameraScreen (props) {
     if (camera) {
       const result = await camera.takePictureAsync()
       if (!result.cancelled) {
-        const data = await predictLeafHealth(result.uri)
-        props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: { image: result.uri, content: data } })
+        const dataId = await predictLeafHealth(result.uri)
+        props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: getDetailPlantInformation(dataId) })
       }
     }
+  }
+
+  function getDetailPlantInformation (id) {
+    return diagnosisData.filter(diagnosis => { return diagnosis.id === id })[0]
   }
 
   async function pickImage () {
@@ -38,8 +43,8 @@ export default function CameraScreen (props) {
       mediaTypes: ImagePicker.MediaTypeOptions.Images
     })
     if (!result.cancelled) {
-      const data = await predictLeafHealth(result.uri)
-      props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: { image: result.uri, content: data } })
+      const dataId = await predictLeafHealth(result.uri)
+      props.navigation.navigate('PastDiagnosisNavigator', { screen: 'Detail', params: getDetailPlantInformation(dataId) })
     }
   }
 

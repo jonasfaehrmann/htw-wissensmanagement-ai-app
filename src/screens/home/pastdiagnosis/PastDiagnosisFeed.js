@@ -15,7 +15,7 @@ function keyExtractor (item) {
 
 export default function PastDiagnosisFeed (props) {
   const theme = useTheme()
-  const data = diagnosisData.map(diagnosisProps => ({
+  const data = diagnosisData.filter(diagnosis => { return !diagnosis.id.includes('healthy') }).map(diagnosisProps => ({
     ...diagnosisProps,
     onPress: () =>
       props.navigation &&

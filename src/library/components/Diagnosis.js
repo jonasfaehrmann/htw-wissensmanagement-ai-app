@@ -45,7 +45,7 @@ export default function Diagnosis (props) {
             <Caption style={[styles.handle, styles.dot]}>{'\u2B24'}</Caption>
             <Caption>{item.date}</Caption>
           </View>
-          <Text style={{ color: contentColor }}>{item.content}</Text>
+          <Text style={{ color: contentColor }}>{item.content.substring(0, 100) + '...'}</Text>
           <Image
             source={{ uri: item.image }}
             style={[
@@ -55,51 +55,7 @@ export default function Diagnosis (props) {
               }
             ]}
           />
-          <View style={styles.bottomRow}>
-            <TouchableOpacity
-              onPress={() => {}}
-              hitSlop={{ top: 10, bottom: 10 }}
-            >
-              <View style={styles.iconContainer}>
-                <MaterialCommunityIcons
-                  name='comment-outline'
-                  size={12}
-                  color={iconColor}
-                />
-                <Caption style={styles.iconDescription}>
-                  {item.comments}
-                </Caption>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {}}
-              hitSlop={{ top: 10, bottom: 10 }}
-            >
-              <View style={styles.iconContainer}>
-                <MaterialCommunityIcons
-                  name='share-outline'
-                  size={14}
-                  color={iconColor}
-                />
-                <Caption style={styles.iconDescription}>
-                  {item.retweets}
-                </Caption>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {}}
-              hitSlop={{ top: 10, bottom: 10 }}
-            >
-              <View style={styles.iconContainer}>
-                <MaterialCommunityIcons
-                  name='heart-outline'
-                  size={12}
-                  color={iconColor}
-                />
-                <Caption style={styles.iconDescription}>{item.hearts}</Caption>
-              </View>
-            </TouchableOpacity>
-          </View>
+          <View style={styles.bottomRow} />
         </View>
       </Surface>
     </TouchableRipple>
